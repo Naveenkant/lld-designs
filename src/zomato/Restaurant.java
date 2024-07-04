@@ -2,6 +2,7 @@ package zomato;
 
 import zomato.item.Item;
 import zomato.observer.Observer;
+import zomato.order.Order;
 
 import java.util.List;
 
@@ -49,7 +50,9 @@ public class Restaurant implements Observer {
     }
 
     @Override
-    public void update(String orderDetails) {
+    public void update(Order orderDetails) {
         System.out.println("Restaurant " + name + " received order: " + orderDetails);
     }
+
+
 }

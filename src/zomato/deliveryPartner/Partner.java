@@ -2,6 +2,7 @@ package zomato.deliveryPartner;
 
 import zomato.Location;
 import zomato.observer.Observer;
+import zomato.order.Order;
 
 public class Partner implements Observer {
     String name;
@@ -50,7 +51,7 @@ public class Partner implements Observer {
     }
 
     @Override
-    public void update(String orderDetails) {
+    public void update(Order orderDetails) {
         System.out.println("Delivery Partner " + name + " received order: " + orderDetails);
     }
 }

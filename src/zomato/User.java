@@ -1,6 +1,7 @@
 package zomato;
 
 import zomato.observer.Observer;
+import zomato.order.Order;
 
 public class User implements Observer {
     String name;
@@ -39,7 +40,7 @@ public class User implements Observer {
     }
 
     @Override
-    public void update(String orderDetails) {
+    public void update(Order orderDetails) {
         System.out.println("your order status is this : " + orderDetails);
     }
 }
