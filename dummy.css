@@ -1,0 +1,105 @@
+/*
+Sure! Here's a brief overview of the common HTTP status codes, categorized by their class, along with a brief description and an example for each.
+
+1xx Informational Responses
+ These status codes indicate that the request was received and understood, and the client should continue with the request or ignore it if it's already finished.
+
+100 Continue
+
+    Description: The server has received the request headers, and the client should proceed to send the request body.
+Example: A client sends a large file in a POST request and the server asks the client to continue.
+101 Switching Protocols
+
+    Description: The requester has asked the server to switch protocols, and the server has agreed to do so.
+Example: A client requests to switch from HTTP/1.1 to HTTP/2.
+2xx Success
+ These status codes indicate that the request was successfully received, understood, and accepted.
+
+200 OK
+
+    Description: The request was successful.
+    Example: A GET request for a webpage returns the content of the page.
+201 Created
+
+    Description: The request has been fulfilled, resulting in the creation of a new resource.
+Example: A POST request to create a new user returns this status after the user is successfully created.
+202 Accepted
+
+    Description: The request has been accepted for processing, but the processing is not complete.
+Example: An asynchronous operation that starts processing a request in the background.
+204 No Content
+
+    Description: The server successfully processed the request and is not returning any content.
+    Example: A DELETE request for a resource that returns this status code indicating the resource was deleted successfully.
+3xx Redirection
+ These status codes indicate that further action needs to be taken by the client to complete the request.
+
+301 Moved Permanently
+
+    Description: The resource requested has been permanently moved to a new URL.
+    Example: A website permanently changes its domain, and all requests to the old domain return this status with the new URL.
+302 Found
+
+    Description: The resource requested is temporarily available at a different URL.
+    Example: A page temporarily redirects to a different URL.
+304 Not Modified
+
+    Description: The resource has not been modified since the version specified by the request headers.
+    Example: A client makes a GET request with a conditional header (If-None-Match), and the server responds with 304 if the content hasn't changed.
+4xx Client Errors
+ These status codes indicate that the client seems to have made an error.
+
+400 Bad Request
+
+    Description: The server cannot or will not process the request due to an apparent client error.
+    Example: A client sends a malformed request syntax.
+401 Unauthorized
+
+    Description: Authentication is required and has failed or has not yet been provided.
+    Example: A client tries to access a restricted area without valid authentication credentials.
+403 Forbidden
+
+    Description: The server understands the request but refuses to authorize it.
+    Example: A user tries to access a resource they don't have permissions for.
+404 Not Found
+
+    Description: The requested resource could not be found on the server.
+    Example: A client requests a page that doesn't exist on the server.
+405 Method Not Allowed
+
+    Description: The request method is not supported for the requested resource.
+    Example: A client makes a PUT request on a resource that only supports GET.
+409 Conflict
+
+    Description: The request could not be completed due to a conflict with the current state of the resource.
+    Example: A client attempts to create a resource that already exists.
+429 Too Many Requests
+
+    Description: The user has sent too many requests in a given amount of time.
+    Example: A client exceeds the rate limit for API requests.
+5xx Server Errors
+ These status codes indicate that the server failed to fulfill a valid request.
+
+500 Internal Server Error
+
+    Description: A generic error message when the server encounters an unexpected condition.
+    Example: The server encounters an exception it can't handle.
+501 Not Implemented
+
+    Description: The server does not support the functionality required to fulfill the request.
+    Example: A client sends a request using a method not supported by the server.
+502 Bad Gateway
+
+    Description: The server received an invalid response from an inbound server.
+    Example: A proxy server receives an invalid response from the upstream server.
+503 Service Unavailable
+
+    Description: The server is currently unavailable (because it is overloaded or down for maintenance).
+                                                                                                       Example: The server is temporarily offline for maintenance.
+504 Gateway Timeout
+
+    Description: The server did not receive a timely response from an upstream server.
+    Example: A proxy server times out while waiting for an upstream server to respond.
+    Summary
+    HTTP status codes are essential for indicating the result of HTTP requests. Understanding these codes helps in diagnosing issues and improving the user experience. Each code serves a specific purpose, guiding developers and clients on how to handle responses effectively.
+    */
