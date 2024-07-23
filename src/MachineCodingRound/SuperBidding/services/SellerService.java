@@ -1,7 +1,6 @@
 package MachineCodingRound.SuperBidding.services;
 
 import MachineCodingRound.SuperBidding.dto.Auction;
-import MachineCodingRound.SuperBidding.dto.Buyer;
 import MachineCodingRound.SuperBidding.dto.Seller;
 import MachineCodingRound.SuperBidding.repository.AuctionRepository;
 import MachineCodingRound.SuperBidding.repository.SellerRepository;
